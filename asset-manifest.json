@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/not-omegle.com/static/css/main.584f321a.chunk.css",
+    "main.js": "/not-omegle.com/static/js/main.e80c11cc.chunk.js",
+    "main.js.map": "/not-omegle.com/static/js/main.e80c11cc.chunk.js.map",
+    "runtime~main.js": "/not-omegle.com/static/js/runtime~main.2961cc28.js",
+    "runtime~main.js.map": "/not-omegle.com/static/js/runtime~main.2961cc28.js.map",
+    "static/js/2.99cf3e8c.chunk.js": "/not-omegle.com/static/js/2.99cf3e8c.chunk.js",
+    "static/js/2.99cf3e8c.chunk.js.map": "/not-omegle.com/static/js/2.99cf3e8c.chunk.js.map",
+    "index.html": "/not-omegle.com/index.html",
+    "precache-manifest.c46a8dfdb3244c5c2fa6acc6136d8f06.js": "/not-omegle.com/precache-manifest.c46a8dfdb3244c5c2fa6acc6136d8f06.js",
+    "service-worker.js": "/not-omegle.com/service-worker.js",
+    "static/css/main.584f321a.chunk.css.map": "/not-omegle.com/static/css/main.584f321a.chunk.css.map"
+  }
+}
