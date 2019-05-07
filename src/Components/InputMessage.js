@@ -12,10 +12,12 @@ const InputMessage = ({label, handleSend}) => {
   return (
     <div>
       <label>{label}</label>
+      <br />
       <textarea
         value={messageValue}
         onChange={handlechange}
       ></textarea>
+      <br />
       <button onClick={handleClickSend}>Send</button>
     </div>
   )
