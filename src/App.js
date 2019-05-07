@@ -14,7 +14,6 @@ function App() {
  const [yourId, setYourId] = useState('')
  const [otherId, setOtherId] = useState('')
  const [messagesList, setMessagesList] = useState([])
- const [myStream, setMyStream] = useState('')
  const videoTag = useRef(null)
  useEffect(() =>{
    setPeer(new Peer({
@@ -45,9 +44,9 @@ function App() {
       stream
     }))
    }, function(err){
-     alert("Webrtc not supported on current browser")
+     alert("Webrtc not supported on current browser", err)
    })
- }, [])
+ }, [initiator])
 
  const handleConnect = () =>{
    const other = JSON.parse(otherId)
