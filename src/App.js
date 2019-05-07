@@ -3,7 +3,8 @@ import './App.css';
 import  Peer from 'simple-peer'
 
 import InfoTextArea  from './Components/InfoTextArea'
-import InputMessage  from './Components/InputMessage'
+import SweetInput from './Components/SweetInput'
+import JoinCreate from './Components/JoinCreate'
 
 function App() {
  const [initiator, setIsInitiator] = useState(true)
@@ -63,14 +64,12 @@ function App() {
  return (
    <div className="App">
      <header className="App-header">
-       <p>
-         Initiator : {String(initiator)}
-         <button onClick={handleToggle }>toglle it</button>
-       </p>
+      <JoinCreate  onClick={handleToggle} initiator={initiator}/>
        <InfoTextArea label="Your Id: " value={yourId}/>
        <InfoTextArea label="Other Id: " value={otherId} handlechange={({target:{value}})=> setOtherId(value)}/>
        <button onClick={handleConnect}>Connect</button>
-       <InputMessage label="Input your message" handleSend={handleSend}/>
+
+        <SweetInput handleSubmit={handleSend} placeholder="Input your message"/>
        {
          messagesList.map(msg => <h1>{msg}</h1>)
        }
