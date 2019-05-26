@@ -28,18 +28,6 @@ function usePeer(initiator) {
     );
   }, [initiator]);
 
-  // useEffect(() => {
-  //   setYourId("");
-  //   peer.on("signal", data => setYourId(JSON.stringify(data)));
-  //   peer.on("data", data => {
-  //     const decodedMessage = new TextDecoder("utf-8").decode(data);
-  //     setMessagesList(prev => [...prev, decodedMessage]);
-  //   });
-  //   peer.on("stream", stream => {
-  //     setVideoSource(stream);
-  //   });
-  // }, [peer]);
-
   return {
     yourId,
     messagesList,
